@@ -1,8 +1,8 @@
 # ODI World Cup Cricket Significant Innings Percentage Dashboard
+Created a Dashboard using plotly Dash.
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 ## Tools and Packages Used
-
+### Jupyter Notebook : Database Creation
   - pandas
   - requests
   - re
@@ -11,11 +11,15 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered H
   - urllib.request.Request
   - urllib.request.urlopen
 
-# Web application Dashboard
-
-  - Import a HTML file and watch it magically convert to Markdown
-  - Drag and drop images (requires your Dropbox account be linked)
-
+### Plotly Dash : Dashboard Creation
+  - dash
+  - plotly
+  - pandas
+  - dash_bootstrap_components
+  - dash_core_components
+  - dash_html_components
+  - dash.dependencies
+  
 
 You can also:
   - Import and save files from GitHub, Dropbox, Google Drive and One Drive
