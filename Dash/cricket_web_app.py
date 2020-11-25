@@ -78,7 +78,7 @@ def Navbar():
             dbc.NavItem(html.A([html.Img(
                 src=app.get_asset_url('Github.png'), alt="GITHUB", height="65px", id="github", draggable="False"
             ), html.Figcaption("Github", style={"color": "white", "margin-left": "12px"})
-            ], href="https://github.com/FahidLatheef", target='_blank', draggable="False"),
+            ], href="https://github.com/FahidLatheef/World-Cup-Cricket-Significant-Innings-Dashboard", target='_blank', draggable="False"),
                 style={"margin-left": "15px"}),
             dbc.NavItem(html.A([html.Img(
                 src=app.get_asset_url('Linkedin.png'), alt="LINKEDIN", height="65px", id="linkedin", draggable="False"
