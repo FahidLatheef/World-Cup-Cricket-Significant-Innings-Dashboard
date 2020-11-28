@@ -20,6 +20,6 @@ Created a Dashboard using plotly Dash.
   - dash_html_components
   - dash.dependencies
 
-[LinkedIn](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
+[LinkedIn](https://www.linkedin.com/pulse/i-created-cricket-world-cup-web-application-using-python-latheef-a)
 
 [Heroku](https://significant-innings-wc-cricket.herokuapp.com/)
