@@ -29,7 +29,7 @@ app = dash.Dash(__name__,
                 ],
                 title='Significant Innings Percentage', update_title='Bowling...',
                 external_stylesheets=[dbc.themes.PULSE])
-server = app.server
+
 app.config.suppress_callback_exceptions = True
 pd.options.plotting.backend = "plotly"
 
