@@ -1,43 +1,48 @@
-.dd_dropdown{
-  background-color: rgb(89,49,150);
-  color: rgb(89,49,150);
-  font-size: 18px;
-  border-style:inset;
-  border-color:black;
-  border_width:4px;
+.dd_dropdown {
+    background-color: rgb(89, 49, 150);
+    border-color: black;
+    border-style: inset;
+    box-sizing: border-box;
+    padding: 0px;
+    border-width: medium;
+    border-collapse: collapse;
+    margin: 0px;
 }
 
 .dd_dropdown .VirtualizedSelectFocusedOption {
-  background-color: rgb(89,49,150);
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  border-style:inset;
-  border-color:black;
-  border_width:4px;
-}
-
-.dd_dropdown .Select-control, .Select-input>input {
-    width: 100%;
-    background-color: rgb(89,49,150);
+    background-color: rgb(89, 49, 150);
     font-size: 18px;
     color: white;
-    cursor: default;
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+}
+
+.dd_dropdown .Select-control,
+.Select-input>input {
+    width: 100%;
+    background-color: rgb(89, 49, 150);
+    cursor: pointer;
+    border-radius: 0px !important;
+    border-style: none !important;
 }
 
 .dd_dropdown .dropdown-menu .divider {
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
-    background-color: #e5e5e5;
+    background-color: black;
 }
 
-.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+.has-value.Select--single>.Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
     color: white;
     font-size: 18px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
-.ml-2{
+.ml-2 {
     font-size: 1.5rem;
     font-weight: 1000;
     #color: rgb(235, 243, 209);
@@ -48,149 +53,150 @@
     white-space: nowrap;
 }
 
-#checkbox > div {
-  display: flex;
-  width: 100%;
+#checkbox>div {
+    display: flex;
+    width: 100%;
 }
 
-my_box_container{
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+my_box_container {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
-
 
 .my_box_input {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-/*  border: 1px solid #c3c3c3;
-font-size: 0.7rem;*/
 .my_box_label {
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  list-style-type: none;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  width: 7vw;
-  font-size: 1.3vw;
-  font-weight: 500;
-  border: 1px hidden #c3c3c3;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    width: 7vw;
+    font-size: 2vw;
+    font-weight: 500;
 }
-
-
 
 #button {
-  background-color: rgb(89,49,150);
-  color: rgb(89,49,150);
-  font-size: 18px;
-  border-style:inset;
-  border-color:black;
-  border_width:4px;
-  text-align: center;
-  height: 6.3vh;
+    font-size: 18px;
+    border-style: inset;
+    border-color: black;
+    border-width: medium;
+    margin-top: 2px;
+    padding: 3px 3px 3px 3px;
 }
 
 #button .VirtualizedSelectFocusedOption {
-  background-color: rgb(89,49,150);
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  border-style:inset;
-  border-color:black;
-  border_width:4px;
+    background-color: rgb(89, 49, 150);
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+    display: inline-block;
 }
 
-#button .Select-control, .Select-input>input {
+#button .Select-control,
+.Select-input>input {
     width: 100%;
-    background-color: rgb(89,49,150);
+    background-color: rgb(89, 49, 150);
     font-size: 18px;
     color: white;
     cursor: default;
+    display: inline-block;
+    border-radius: 0 !important;
+    box-sizing: border-box;
 }
 
 #button:hover {
-background-color: #3e8e41;
+    background-color: #3e8e41;
+    display: inline-block;
 }
 
 #button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+    display: inline-block;
 }
 
 p {
-  font-size: 1.3rem;
-  color: #333333;
-  font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-html, body {
-  background: linear-gradient(to bottom, rgb(235, 243, 209) 0%, rgb(235, 243, 209) 100%);
+html,
+body {
+    background: linear-gradient(to bottom, rgb(235, 243, 209) 0%, rgb(235, 243, 209) 100%);
 }
 
 #summary_text {
-  font-size: 1.2rem;
-  color: rgb(140, 36, 36);
-  font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(140, 36, 36);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #article {
-  font-size: 1.4rem;
-  color: rgb(62, 65, 55);
-  font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(62, 65, 55);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #display-selected-values p {
-  color: rgb(89,49,150);
+    color: rgb(89, 49, 150);
 }
 
-
 #nav_row {
-    -webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.87);
-    -moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.87);
-    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.87);
-    top: 0; /* Position the navbar at the top of the page */
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.87);
+    top: 0;
+    /* Position the navbar at the top of the page */
     overflow: hidden;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     position: relative;
 }
 
 #footer {
-    bottom: 0; /* Position the navbar at the bottom of the page */
+    bottom: 0;
+    /* Position the navbar at the bottom of the page */
     overflow: hidden;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     position: relative;
-    background-color: rgb(89,49,150);
-    color:white;
+    background-color: rgb(89, 49, 150);
+    color: white;
 }
 
-#footer p{
-color: white;
-
+#footer p {
+    color: white;
 }
 
 #github {
--webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 #wc {
--webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 #linkedin {
--webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 #faq {
--webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 }
