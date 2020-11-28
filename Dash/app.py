@@ -29,7 +29,7 @@ app = dash.Dash(__name__,
                 ],
                 title='Significant Innings Percentage', update_title='Bowling...',
                 external_stylesheets=[dbc.themes.PULSE])
-
+server = app.server
 app.config.suppress_callback_exceptions = True
 pd.options.plotting.backend = "plotly"
 
@@ -82,7 +82,7 @@ def Navbar():
             dbc.NavItem(html.A([html.Img(
                 src=app.get_asset_url('Linkedin.png'), alt="LINKEDIN", height="65px", id="linkedin", draggable="False"
             ), html.Figcaption("LinkedIn", style={"color": "white", "margin-left": "8px"})
-            ], href="https://www.linkedin.com/in/fahid-latheef-a-266b08164/", target='_blank', draggable="False"),
+            ], href="https://www.linkedin.com/pulse/i-created-cricket-world-cup-web-application-using-python-latheef-a", target='_blank', draggable="False"),
                 style={"margin-left": "15px"}),
             dbc.NavItem(html.A([html.Img(
                 src=app.get_asset_url('qm.png'), alt="FAQ", height="65px", id="faq", draggable="False"
@@ -346,7 +346,7 @@ def plot_bar(selected_country, selected_years):
             percent = str(round(100 * max(zip(x, y), key=lambda x: x[1])[1], 2)) + "%"
 
             return fig, dcc.Markdown("""
-            The batting position **{2}** seems to have the maximum percentage ({3}) of significant innings. So, if there is a
+            The batting position **{2}** has the maximum percentage ({3}) of significant innings. So, if there is a
             great talent like **{0}** in World-Cup team of **{1}**, it may be better to play him in the **Batting
             Position {2}** based on the selected World-Cup years.
              """.format(random.choice(talent_list[selected_country]), selected_country, maxed, percent))
@@ -365,10 +365,7 @@ def plot_bar(selected_country, selected_years):
                                family="monospace",
                                size=12,
                                color='black'
-                           ),
-
-                           # 'height': 500,
-                           # 'width': 500
+                           )
                            }
             }), html.Center(dcc.Markdown(
                 "Nothing interesting here! Try selecting World-Cup years."
